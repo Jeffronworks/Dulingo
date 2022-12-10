@@ -7,6 +7,7 @@ import Header from "./src/components/Header/Header";
 import questions from "./assets/data/allQuestions";
 import ImageMultipleChoiceQuestion from "./src/components/ImageMultipleChoiceQuestion";
 import OpenEndedQuestion from "./src/components/OpenEndedQuestion";
+import FillerQuestion from "./src/components/FillerQuestion";
 
 const App = () => {
   const [currentQuestionIndex, setCurrentQuesionIndex] = useState(0);
@@ -92,7 +93,8 @@ const App = () => {
         progress={currentQuestionIndex / questions.length}
         lives={lives}
       />
-      {currentQuestion.type === "IMAGE_MULTIPLE_CHOICE" && (
+      <FillerQuestion />
+      {/* {currentQuestion.type === "IMAGE_MULTIPLE_CHOICE" && (
         <ImageMultipleChoiceQuestion
           question={currentQuestion}
           onCorrect={onCorrect}
@@ -105,7 +107,7 @@ const App = () => {
           onCorrect={onCorrect}
           onWrong={onWrong}
         />
-      )}
+      )} */}
     </View>
   );
 };

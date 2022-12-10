@@ -29,14 +29,13 @@ const styles = StyleSheet.create({
   },
   textInput: {
     backgroundColor: "#ebebeb",
-    alignSelf: "stretch",
+    // alignSelf: "stretch",
 
     padding: 10,
-    flex: 1,
 
     borderColor: "lightgrey",
     borderWidth: 1,
-    borderRadius: 10,
+    borderRadius: 15,
     fontSize: 16,
   },
 });
